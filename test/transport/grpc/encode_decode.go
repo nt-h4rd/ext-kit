@@ -6,8 +6,8 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	"github.com/einouqo/ext-kit/test/transport/_service"
-	"github.com/einouqo/ext-kit/test/transport/grpc/pb"
+	service "github.com/nt-h4rd/ext-kit/test/transport/_service"
+	"github.com/nt-h4rd/ext-kit/test/transport/grpc/pb"
 )
 
 func encodeRequest(_ context.Context, r service.EchoRequest) (proto.Message, error) {

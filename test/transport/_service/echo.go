@@ -5,7 +5,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/einouqo/ext-kit/endpoint"
+	"github.com/nt-h4rd/ext-kit/endpoint"
 )
 
 type EchoRequest struct {
