@@ -1,7 +1,7 @@
 # Go ext kit
 
 ![Go Version](https://img.shields.io/badge/go-1.18+-blue.svg)
-[![Go Report Card](https://goreportcard.com/badge/github.com/nt-h4rd/ext-kit)](https://goreportcard.com/report/github.com/nt-h4rd/ext-kit)
+[![Go Report Card](https://goreportcard.com/badge/github.com/einouqo/ext-kit)](https://goreportcard.com/report/github.com/einouqo/ext-kit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This project is a modern Go language extension of the popular [go-kit](https://github.com/go-kit/kit) library. It includes gRPC streams and WebSocket transport implementations, which were previously absent in `go-kit`. These additions are intended to make the library more versatile for contemporary Go developers. A few packages with small yet practical functions and types are also included in this project for convenience and ease of use.
@@ -22,7 +22,7 @@ Recognizing the need for these features, there emerged an opportunity to enhance
 ## Installation
 
 ```bash
-go get github.com/nt-h4rd/ext-kit
+go get github.com/einouqo/ext-kit
 ```
 
 ## Usage

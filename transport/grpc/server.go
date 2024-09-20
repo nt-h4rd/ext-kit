@@ -13,7 +13,7 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/nt-h4rd/ext-kit/endpoint"
+	"github.com/einouqo/ext-kit/endpoint"
 )
 
 type HandlerUnary interface {
@@ -283,7 +283,7 @@ func (srv ServerOuterStream[IN, OUT]) ServeOuterStream(s grpc.ServerStream) (ctx
 	group.Go(func() error {
 		defer close(inCh)
 		for {
-			msg := proto.Clone(srv.reflectReceive.Interface().(proto.Message))
+			msg := srv.reflectReceive.Interface().(proto.Message)
 			err := s.RecvMsg(msg)
 			switch {
 			case errors.Is(err, io.EOF):
@@ -415,7 +415,7 @@ func (srv ServerBiStream[IN, OUT]) ServeBiStream(s grpc.ServerStream) (ctx conte
 	group.Go(func() error {
 		defer close(inCh)
 		for {
-			msg := proto.Clone(srv.reflectReceive.Interface().(proto.Message))
+			msg := srv.reflectReceive.Interface().(proto.Message)
 			err := s.RecvMsg(msg)
 			switch {
 			case errors.Is(err, io.EOF):

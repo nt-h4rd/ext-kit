@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/tap"
 
-	"github.com/nt-h4rd/ext-kit/util"
+	"github.com/einouqo/ext-kit/util"
 )
 
 func TestHandler_implement(t *testing.T) {

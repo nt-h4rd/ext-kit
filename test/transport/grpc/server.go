@@ -3,10 +3,10 @@ package grpc
 import (
 	"context"
 
-	"github.com/nt-h4rd/ext-kit/endpoint"
-	service "github.com/nt-h4rd/ext-kit/test/transport/_service"
-	"github.com/nt-h4rd/ext-kit/test/transport/grpc/pb"
-	kitgrpc "github.com/nt-h4rd/ext-kit/transport/grpc"
+	"github.com/einouqo/ext-kit/endpoint"
+	"github.com/einouqo/ext-kit/test/transport/_service"
+	"github.com/einouqo/ext-kit/test/transport/grpc/pb"
+	kitgrpc "github.com/einouqo/ext-kit/transport/grpc"
 )
 
 type Service interface {

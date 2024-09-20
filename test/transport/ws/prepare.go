@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"net/url"
 
-	service "github.com/nt-h4rd/ext-kit/test/transport/_service"
-	"github.com/nt-h4rd/ext-kit/transport/ws"
+	"github.com/einouqo/ext-kit/test/transport/_service"
+	"github.com/einouqo/ext-kit/transport/ws"
 )
 
 func prepareTest(address string) (client *ClientBinding, tidy func(), err error) {

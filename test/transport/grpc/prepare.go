@@ -7,9 +7,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	service "github.com/nt-h4rd/ext-kit/test/transport/_service"
-	"github.com/nt-h4rd/ext-kit/test/transport/grpc/pb"
-	kitgrpc "github.com/nt-h4rd/ext-kit/transport/grpc"
+	"github.com/einouqo/ext-kit/test/transport/_service"
+	"github.com/einouqo/ext-kit/test/transport/grpc/pb"
+	kitgrpc "github.com/einouqo/ext-kit/transport/grpc"
 )
 
 func prepareTestGRPC(address string) (client *ClientBinding, tidy func(), err error) {
@@ -28,7 +28,7 @@ func prepareTestGRPC(address string) (client *ClientBinding, tidy func(), err er
 }
 
 func prepareClientPB(address string) (client pb.EchoClient, tidy func(), err error) {
-	cc, err := grpc.NewClient(address, grpc.WithTransportCredentials(insecure.NewCredentials()))
+	cc, err := grpc.Dial(address, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		return nil, nil, fmt.Errorf("unable to Dial: %+v", err)
 	}
@@ -39,7 +39,7 @@ func prepareClientPB(address string) (client pb.EchoClient, tidy func(), err err
 }
 
 func prepareClient(address string, opts ...kitgrpc.ClientOption) (client *ClientBinding, tidy func(), err error) {
-	cc, err := grpc.NewClient(address, grpc.WithTransportCredentials(insecure.NewCredentials()))
+	cc, err := grpc.Dial(address, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		return nil, nil, fmt.Errorf("unable to Dial: %+v", err)
 	}

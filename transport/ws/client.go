@@ -14,7 +14,7 @@ import (
 	kithttp "github.com/go-kit/kit/transport/http"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/nt-h4rd/ext-kit/endpoint"
+	"github.com/einouqo/ext-kit/endpoint"
 )
 
 type Client[OUT, IN any] struct {

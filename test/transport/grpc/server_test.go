@@ -1,3 +1,6 @@
+//go:build integration
+// +build integration
+
 package grpc
 
 import (
@@ -12,8 +15,8 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/nt-h4rd/ext-kit/test/transport/grpc/pb"
-	kitgrpc "github.com/nt-h4rd/ext-kit/transport/grpc"
+	"github.com/einouqo/ext-kit/test/transport/grpc/pb"
+	kitgrpc "github.com/einouqo/ext-kit/transport/grpc"
 )
 
 const (
