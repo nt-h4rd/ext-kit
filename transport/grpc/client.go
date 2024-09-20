@@ -13,7 +13,7 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/einouqo/ext-kit/endpoint"
+	"github.com/nt-h4rd/ext-kit/endpoint"
 )
 
 type ClientUnary[OUT, IN any] struct{ client[OUT, IN] }

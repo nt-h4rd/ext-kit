@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/einouqo/ext-kit/test/transport/_service"
-	"github.com/einouqo/ext-kit/transport/ws"
+	service "github.com/nt-h4rd/ext-kit/test/transport/_service"
+	"github.com/nt-h4rd/ext-kit/transport/ws"
 )
 
 func encodeRequest(_ context.Context, req service.EchoRequest) ([]byte, ws.MessageType, error) {

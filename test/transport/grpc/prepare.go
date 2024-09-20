@@ -7,9 +7,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/einouqo/ext-kit/test/transport/_service"
-	"github.com/einouqo/ext-kit/test/transport/grpc/pb"
-	kitgrpc "github.com/einouqo/ext-kit/transport/grpc"
+	service "github.com/nt-h4rd/ext-kit/test/transport/_service"
+	"github.com/nt-h4rd/ext-kit/test/transport/grpc/pb"
+	kitgrpc "github.com/nt-h4rd/ext-kit/transport/grpc"
 )
 
 func prepareTestGRPC(address string) (client *ClientBinding, tidy func(), err error) {

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/einouqo/ext-kit/transport/ws"
+import "github.com/nt-h4rd/ext-kit/transport/ws"
 
 type Message struct {
 	Type    ws.MessageType

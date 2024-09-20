@@ -7,8 +7,8 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/einouqo/ext-kit/endpoint"
-	"github.com/einouqo/ext-kit/transport/ws"
+	"github.com/nt-h4rd/ext-kit/endpoint"
+	"github.com/nt-h4rd/ext-kit/transport/ws"
 )
 
 var (

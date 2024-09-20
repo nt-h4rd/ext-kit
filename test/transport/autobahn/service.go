@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	"github.com/einouqo/ext-kit/endpoint"
+	"github.com/nt-h4rd/ext-kit/endpoint"
 )
 
 type Streamer struct{}

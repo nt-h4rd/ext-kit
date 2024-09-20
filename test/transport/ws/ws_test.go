@@ -16,9 +16,9 @@ import (
 	"github.com/fasthttp/websocket"
 	"golang.org/x/exp/slices"
 
-	"github.com/einouqo/ext-kit/endpoint"
-	"github.com/einouqo/ext-kit/test/transport/_service"
-	"github.com/einouqo/ext-kit/transport/ws"
+	"github.com/nt-h4rd/ext-kit/endpoint"
+	service "github.com/nt-h4rd/ext-kit/test/transport/_service"
+	"github.com/nt-h4rd/ext-kit/transport/ws"
 )
 
 const (

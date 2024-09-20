@@ -1,4 +1,4 @@
-module github.com/einouqo/ext-kit
+module github.com/nt-h4rd/ext-kit
 
 go 1.18
 
